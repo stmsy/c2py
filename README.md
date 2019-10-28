@@ -1,6 +1,6 @@
 # Sample Python Binding Project
 
-# Requirements
+## Requirements
 
 - [pyenv](https://github.com/pyenv/pyenv)
 - [pyenv-virtualenv](https://github.com/pyenv/pyenv-virtualenv)
@@ -21,9 +21,9 @@ pip intall -U pip  # Optional
 pip install -r requirements.txt
 ```
 
-# Usage
+## Usage
 
-## SWIG
+### SWIG
 
 ```shell
 cd swig
@@ -32,7 +32,7 @@ python setup.py build_ext
 python setup.py install --prefix=~/.pyenv/versions/c2py
 ```
 
-# References
+## References
 
 - [Distributing Python Modules (Legacy version)](https://docs.python.org/3.7/distutils/index.html)
 - [HOWTO: Install your own python modules](https://www.osc.edu/book/export/html/3004)
