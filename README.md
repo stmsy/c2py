@@ -29,7 +29,16 @@ pip install -r requirements.txt
 cd swig
 swig -python sample.i  # sample_wrap.c will be generated
 python setup.py build_ext
-python setup.py install --prefix=~/.pyenv/versions/c2py
+python setup.py install --prefix=$PYENV_VIRTUAL_ENV
+```
+
+### Cython
+
+```shell
+cd cython
+swig -python sample.i  # fib_wrap.c will be generated
+python setup.py build_ext
+python setup.py install --prefix=$PYENV_VIRTUAL_ENV
 ```
 
 ## References
