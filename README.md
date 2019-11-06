@@ -10,14 +10,14 @@
 Create a Python virtual environment named `c2py` with `pyenv` and `pyenv-virtualenv` before you start working with SWIG and Cython. For example, run the following
 
 ```shell
-pyenv intall 3.7.2
+pyenv install 3.7.2
 pyenv virtualenv 3.7.2 c2py
 pyenv local c2py  # Run the command at the project root directory
 ```
 and you may opt to install the packages listed in `requirements.txt` as follows.
 
 ```shell
-pip intall -U pip  # Optional
+pip install -U pip  # Optional
 pip install -r requirements.txt
 ```
 
