@@ -41,6 +41,20 @@ python setup.py build_ext
 python setup.py install --prefix=$PYENV_VIRTUAL_ENV
 ```
 
+### ctypes
+
+```shell
+cd ctypes
+gcc -shared -o libdample.so sample.c
+```
+
+and use the Python interactive shell like [IPython](https://ipython.org/)
+
+```python
+from ctypes import cdll
+libc = cdll.LoadLibrary('libsample.so')
+```
+
 ## References
 
 - [Distributing Python Modules (Legacy version)](https://docs.python.org/3.7/distutils/index.html)
