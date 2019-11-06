@@ -7,6 +7,6 @@ setup(
     version='0.0.1',
     py_modules=['sample'],
     ext_modules=[
-        Extension('_sample', sources=['sample.c', 'sample.i'])
+        Extension(name='_sample', sources=['sample.c', 'sample.i'])
     ]
 )
