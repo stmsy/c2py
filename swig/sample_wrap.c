@@ -2666,9 +2666,8 @@ static swig_module_info swig_module = {swig_types, 1, 0, 0, 0, 0};
 #define SWIG_as_voidptrptr(a) ((void)SWIG_as_voidptr(*a),(void**)(a)) 
 
 
-extern double dvar;
-extern int fact(int n);
-extern char *get_time();
+#define SWIG_FILE_WITH_INIT
+#include "sample.h"
 
 
 SWIGINTERN int

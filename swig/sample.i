@@ -1,10 +1,10 @@
 %module sample
+
 %{
-extern double dvar;
-extern int fact(int n);
-extern char *get_time();
+#define SWIG_FILE_WITH_INIT
+#include "sample.h"
 %}
 
-extern double dvar;
-extern int fact(int n);
-extern char *get_time();
+double dvar;
+int fact(int n);
+char *get_time();
